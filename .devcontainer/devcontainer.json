@@ -30,9 +30,7 @@
 					88
 				],
 				"ruff.organizeImports": true,
-				"editor.defaultFormatter": "charliermarsh.ruff",
-				"licenser.license": "Custom",
-				"licenser.customHeaderFile": "/workspace/.devcontainer/license_header.txt"
+				"editor.defaultFormatter": "charliermarsh.ruff"
 			},
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [

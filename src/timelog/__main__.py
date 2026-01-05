@@ -19,14 +19,22 @@ import asyncio
 
 from ghga_service_commons.api import run_server
 
-from .api.main import app  # noqa: F401 pylint: disable=unused-import
-from .config import CONFIG, Config
+from timelog.inject import prepare_rest_app
+
+from .config import Config
 
 
-def run(config: Config = CONFIG):
+async def run_rest_app():
+    """Run the HTTP REST API."""
+    config = Config()  # type: ignore [call-arg]
+
+    async with prepare_rest_app(config=config) as app:
+        await run_server(app=app, config=config)
+
+
+def run():
     """Run the service."""
-    # Please adapt to package name
-    asyncio.run(run_server(app="my_microservice.__main__:app", config=config))
+    asyncio.run(run_rest_app())
 
 
 if __name__ == "__main__":

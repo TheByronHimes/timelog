@@ -7,7 +7,7 @@ build-backend = "setuptools.build_meta"
 [project]
 readme = "README.md"
 authors = [
-    { name = "German Human Genome Phenome Archive (GHGA)", email = "contact@ghga.de" },
+    { name = "Byron Himes", email = "thebyronhimes@gmail.com" },
 ]
 requires-python = ">=3.13"
 classifiers = [
@@ -20,24 +20,22 @@ classifiers = [
     "Topic :: Software Development :: Libraries",
     "Intended Audience :: Developers",
 ]
-name = "my_microservice"
+name = "timelog"
 version = "0.1.0"
-description = "My-Microservice - a short description"
+description = "Timelog - Logs time intervals"
 dependencies = [
     "typer >= 0.19.1",
     "ghga-service-commons[api] >= 5.0",
-    "ghga-event-schemas >= 10.0",
-    "hexkit[akafka,s3,mongodb] >= 7.0",
 ]
 
 [project.license]
 text = "Apache 2.0"
 
 [project.urls]
-Repository = "https://github.com/ghga-de/my-microservice"
+Repository = "https://github.com/thebyronhimes/timelog"
 
 [project.scripts]
-my-microservice = "my_microservice.__main__:run"
+timelog = "timelog.__main__:run"
 
 [tool.setuptools.packages.find]
 where = [

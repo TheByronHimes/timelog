@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 readme = "README.md"
 authors = [
-    { name = "German Human Genome Phenome Archive (GHGA)", email = "contact@ghga.de" },
+    { name = "Byron Himes", email = "thebyronhimes@gmail.com" },
 ]
 requires-python = ">=3.13"
 license = { text = "Apache 2.0" }
