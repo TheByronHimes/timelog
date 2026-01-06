@@ -34,7 +34,7 @@ services:
 
     # Please remove service dependencies that are not needed:
   mongodb:
-    image: mongo:latest
+    image: mongodb/mongodb-community-server:4.4.3-ubuntu2004
     restart: unless-stopped
     volumes:
       - mongo_fs:/data/db

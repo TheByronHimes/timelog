@@ -6,6 +6,7 @@ description = "Timelog - Logs time intervals"
 dependencies = [
     "typer >= 0.19.1",
     "ghga-service-commons[api] >= 5.0",
+    "hexkit[mongodb] >= 6.0",
 ]
 
 [project.urls]
